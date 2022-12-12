@@ -1,5 +1,8 @@
 docker run docker/whalesay cowsay hello_world
 
+#Create and run
+docker run ...comands
+
 #Run an image
 docker run <image>
 
@@ -20,9 +23,12 @@ docker container ls
 docker ps -a
 docker container ls -a
 
+#Start a container created
+docker start <name or id>
 
 #Stop a container
-docker stop <name>
+docker stop <name or id>
+
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
