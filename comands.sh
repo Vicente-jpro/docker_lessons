@@ -35,6 +35,8 @@ docker run --name <my_container_name> <image>
 #Show container logs
 docker logs <name or id>
 
+#Remove containersS
+docker rm <name or id>
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
