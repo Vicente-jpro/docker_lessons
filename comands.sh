@@ -44,3 +44,6 @@ docker run -p 3000:80
 
 #Executing an image
 docker build <diretorio da imagem>
+
+#Executing an image inside directory
+docker build .
