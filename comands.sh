@@ -9,3 +9,7 @@ docker run -it <image>
 #Show containers running
 docker ps
 docker container ls
+
+#Show all containers that we running it before
+docker ps -a
+docker container ls -a
