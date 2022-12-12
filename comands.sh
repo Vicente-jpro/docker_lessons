@@ -8,3 +8,4 @@ docker run -it <image>
 
 #Show containers running
 docker ps
+docker container ls
