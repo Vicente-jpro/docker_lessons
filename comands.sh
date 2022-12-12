@@ -36,8 +36,11 @@ docker run --name <my_container_name> <image>
 docker logs <name or id>
 
 #Remove containersS
-docker rm <name or id>
+docker rm <name or id> -f
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
 docker run -p 3000:80 
+
+#Executing an image
+docker build <diretorio da imagem>
