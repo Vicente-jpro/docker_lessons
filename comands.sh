@@ -29,6 +29,8 @@ docker start <name or id>
 #Stop a container
 docker stop <name or id>
 
+#Change default name on create a image container
+docker run --name <my_container_name> <image> 
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
