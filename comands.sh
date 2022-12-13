@@ -37,8 +37,8 @@ docker run --name <my_container_name> <image>
 docker logs <name or id>
 
 #Remove containers
-docker rm <name or id> -f
-docker rmi <id_image> -f
+docker rm -f <name or id> 
+docker rmi -f <id_image> 
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
