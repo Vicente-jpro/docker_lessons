@@ -63,3 +63,6 @@ docker tag <id_image>
 
 #Build an image and rename it
 docker build -t my_image_name .
+
+#Build an image and rename it with a tag
+docker build -t my_image_name:tag_name .
