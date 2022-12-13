@@ -41,6 +41,8 @@ docker rm -f <name or id>
 docker rmi -f <id_image> 
 #Delete unusefull container  
 docker system prune
+#Remove container after use
+docker run --rm <id_image> 
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
