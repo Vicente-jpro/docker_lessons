@@ -39,6 +39,8 @@ docker logs <name or id>
 #Remove containers
 docker rm -f <name or id> 
 docker rmi -f <id_image> 
+#Delete unusefull container  
+docker system prune
 
 #Choosing a port  my_computer_port:docker_port. Ex: 3000:80
 #My browser going to understand localhost:3000
@@ -68,3 +70,5 @@ docker build -t my_image_name .
 
 #Build an image and rename it with a tag
 docker build -t my_image_name:tag_name .
+
+#
