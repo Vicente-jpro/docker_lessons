@@ -47,3 +47,6 @@ docker build <diretorio da imagem>
 
 #Executing an image inside directory
 docker build .
+
+#List all images
+docker image ls
