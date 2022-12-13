@@ -57,3 +57,6 @@ docker -d -p port_used_in_my_computer:port_used_on_container --name my_container
 
 #Download an image
 docker pull <image_name>
+
+#Rename an image
+docker tag <id_image>
