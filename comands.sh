@@ -25,6 +25,7 @@ docker container ls -a
 
 #Start a container created
 docker start <name or id>
+docker start -it <name or id>
 
 #Stop a container
 docker stop <name or id>
