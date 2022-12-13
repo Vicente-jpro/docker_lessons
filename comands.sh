@@ -53,3 +53,6 @@ docker image ls
 
 #Run container with specific port
 docker -d -p port:port --name my_container_name <id_container>
+
+#Download images
+docker pull <image_name>
