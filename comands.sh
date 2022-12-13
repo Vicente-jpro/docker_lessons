@@ -60,3 +60,6 @@ docker pull <image_name>
 
 #Rename an image
 docker tag <id_image>
+
+#Build an image and rename it
+docker build -t my_image_name .
