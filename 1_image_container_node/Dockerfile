@@ -6,7 +6,7 @@ FROM node
 WORKDIR /app
 
 #Import all file with name package
-COPY package*.json .
+COPY package*.json ./
 
 #Install dependencies
 RUN npm install
