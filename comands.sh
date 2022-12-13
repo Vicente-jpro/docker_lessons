@@ -52,7 +52,8 @@ docker build .
 docker image ls
 
 #Run container with specific port
-docker -d -p port:port --name my_container_name <id_container>
+# port_used_on_container must be the same as the application
+docker -d -p port_used_in_my_computer:port_used_on_container --name my_container_name <id_container>
 
-#Download images
+#Download an image
 docker pull <image_name>
