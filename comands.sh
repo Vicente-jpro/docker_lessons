@@ -89,7 +89,7 @@ docker stats <id_container>
 docker login
 docker logout
 
-#Sending image to docker hub
+#Sending an image to docker hub
 # 1 - Create a repository in docker hub acount
 # 2 - Build your local image
 # 3 - Push your image to your acount
@@ -99,3 +99,6 @@ docker logout
 #Dowloading an image from docker hub
 docker pull my_username/repository_name
 
+#Sending an image updated 
+1 - docker build -t my_username/repository_name:tag_name_version .
+2 - docker push my_username/repository_name:tag_name_version
