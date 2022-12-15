@@ -89,4 +89,6 @@ docker stats <id_container>
 docker login
 docker logout
 
+#Sending image to docker hub
+docker push <id_image>
 
