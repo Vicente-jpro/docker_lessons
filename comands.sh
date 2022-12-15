@@ -90,5 +90,6 @@ docker login
 docker logout
 
 #Sending image to docker hub
-docker push my_username/repository_name:tag_name
+1 - docker build -t my_username/repository_name:tag_name .
+2 - docker push my_username/repository_name:tag_name
 
