@@ -81,3 +81,10 @@ docker top <id_container>
 
 #Inspect container
 docker inspect <id_container>
+
+#Verifying process
+docker stats <id_container>
+
+
+
+
