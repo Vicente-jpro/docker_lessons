@@ -90,5 +90,5 @@ docker login
 docker logout
 
 #Sending image to docker hub
-docker push <id_image>
+docker push my_username/repository_name:tag_name
 
