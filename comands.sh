@@ -75,3 +75,9 @@ docker build -t my_image_name:tag_name .
 
 #Copy file from docker to PC
 docker cp <id_container or name>:/path_origem/file ./path_destin
+
+#Verifying docker execution process
+docker top <id_container>
+
+#Inspect container
+docker inspect <id_container>
