@@ -85,6 +85,8 @@ docker inspect <id_container>
 #Verifying process
 docker stats <id_container>
 
-
+#Docker authentication docker
+docker login
+docker logout
 
 
