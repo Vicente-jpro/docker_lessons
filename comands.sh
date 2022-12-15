@@ -73,4 +73,5 @@ docker build -t my_image_name .
 #Build an image and rename it with a tag
 docker build -t my_image_name:tag_name .
 
-#
+#Copy file from docker to PC
+docker cp <id_container or name>:/path_origem/file ./path_destin
