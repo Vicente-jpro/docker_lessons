@@ -32,6 +32,8 @@ docker stop <name or id>
 
 #Change default name on create a image container
 docker run --name <my_container_name> <image> 
+#Run my own image form docker hub
+docker run --name <my_container_name> <image> -p port_used_in_my_computer:port_used_on_container -d <my_username>/<repository_name:tag_name_version>
 
 #Show container logs
 docker logs <name or id>
@@ -96,9 +98,9 @@ docker logout
 1 - docker build -t my_username/repository_name:tag_name .
 2 - docker push my_username/repository_name:tag_name
 
-#Dowloading an image from docker hub
-docker pull my_username/repository_name
-
 #Sending an image updated 
 1 - docker build -t my_username/repository_name:tag_name_version .
 2 - docker push my_username/repository_name:tag_name_version
+
+#Dowloading an image from docker hub
+docker pull my_username/repository_name
