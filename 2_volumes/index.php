@@ -7,6 +7,10 @@
     <title>Volumes</title>
 </head>
 <body>
-    
+    <h1>Escreva as suas mensagens</h1>
+    <form action="process.php" method="post">
+        <input type="text" name="message" id="message">
+        <button type="submit">Enviar mensagem</button>
+    </form>
 </body>
 </html>
