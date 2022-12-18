@@ -104,3 +104,7 @@ docker logout
 
 #Dowloading an image from docker hub
 docker pull my_username/repository_name
+
+# Create a named volume
+docker run -v volume_name:/path_where_file_is_located
+docker run --name my_container_name -p 80:80 -d -v volume_name:/path_where_file_is_located --rm last_image
