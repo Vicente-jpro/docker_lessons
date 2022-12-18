@@ -1,10 +1,10 @@
 
-FROM PHP:8-apache
+FROM php:8-apache
 
 WORKDIR /var/www/html/
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 80
 
 RUN chown -R www-data:www-data /var/www
