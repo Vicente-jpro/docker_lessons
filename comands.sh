@@ -118,3 +118,9 @@ docker run -d -p 80:80 --name php_container -v /home/vicente-simao/Dev/Docker/do
 # See volumes
 docker volume ls
 docker volumes inspect volume_name
+
+# Remove a volume you going to lost all data
+docker volume rm volume_name
+
+# Remove unused volume
+docker volume prune
