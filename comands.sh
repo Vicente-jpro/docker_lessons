@@ -124,3 +124,11 @@ docker volume rm volume_name
 
 # Remove unused volume
 docker volume prune
+
+# Show network
+docker network ls
+
+# Create network
+docker network create my_network_name 
+
+# Cre a network with a vlan
