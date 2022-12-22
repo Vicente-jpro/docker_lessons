@@ -117,3 +117,4 @@ docker run -d -p 80:80 --name php_container -v /home/vicente-simao/Dev/Docker/do
 
 # See volumes
 docker volume ls
+docker volumes inspect volume_name
