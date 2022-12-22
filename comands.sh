@@ -131,4 +131,8 @@ docker network ls
 # Create network
 docker network create my_network_name 
 
-# Cre a network with a vlan
+# Remove a network
+docker network rm my_network_name
+
+# Create a network with a specific driver
+docker network create -d mac
