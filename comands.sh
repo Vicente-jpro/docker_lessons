@@ -105,10 +105,15 @@ docker logout
 #Dowloading an image from docker hub
 docker pull my_username/repository_name
 
-# Create a named volume
+# Run an image with named volume
 docker run -v volume_name:/path_where_file_is_located
 docker run -d -p 80:80 --name <name> -v  volume_name:/WORKDIR/folder --rm <id_container or name>
 docker run -d -p 80:80 --name php_container -v message_volume:/var/www/html/messages --rm afbef9016d71
+
+# Run an image with named volume in dir
+docker run -v /dir/data:/data
+docker run -d -p 80:80 --name <name> -v  dir:/WORKDIR/folder --rm <id_container or name>
+docker run -d -p 80:80 --name php_container -v /home/vicente-simao/Dev/Docker/docker_lessons/2_volumes/messages:/var/www/html/messages --rm afbef9016d71
 
 # See volumes
 docker volume ls
