@@ -2,7 +2,7 @@
 FROM python:3
 
 RUN apt-get update -y && \
-    pat-get install -y python-pip python-dev
+    apt-get install -y python3-pip python-dev
 
 WORKDIR /app
 
