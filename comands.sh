@@ -140,3 +140,12 @@ docker network create -d mac
 #Connecting with a network
 docker run -d -p 5000:5000 --name my_container_name --rm --network my_network_name other_network
 
+# Run a docker compose
+docker-compose up 
+      or 
+docker compose up
+
+# Stop a docker compuse
+docker-compose down 
+      or 
+docker compose down
