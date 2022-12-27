@@ -149,3 +149,9 @@ docker compose up
 docker-compose down 
       or 
 docker compose down
+
+
+# Verify all service that is used on docker-compose
+docker-compose ps
+      or 
+docker compose ps
