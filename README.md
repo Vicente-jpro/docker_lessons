@@ -15,7 +15,7 @@
          
       ]
 }
-``
+```
 ### Run Mysql database on docker
  ```sh
 docker pull mysql
