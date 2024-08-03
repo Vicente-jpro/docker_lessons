@@ -16,3 +16,12 @@
       ]
 }
 ``
+### Run Mysql database on docker
+ ```sh
+docker pull mysql
+ ```
+ ```sh
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=my-password -e MYSQL_DATABASE=my-database-name -d mysql:latest
+ ```
+
+
