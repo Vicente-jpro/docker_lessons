@@ -24,4 +24,9 @@ docker pull mysql
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=my-password -e MYSQL_DATABASE=my-database-name -d mysql:latest
  ```
 
+ ```sh
+docker compose up -d --build
+ ```
+
+
 
