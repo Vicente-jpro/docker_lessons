@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: "rabbitmq:3-management"
+    hostname: "rabbit"
+    environment:
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+    ports:
+      - "15700:15672"
+      - "5673:5672"
+    labels:
+      NAME: "rabbitmq"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks: 
+      - psi_cron
+    restart: always
+    volumes: 
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.confe
