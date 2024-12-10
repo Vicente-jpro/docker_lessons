@@ -27,6 +27,24 @@ docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=my-password -e MYSQL
  ```sh
 docker compose up -d --build
  ```
+### Run docker-compose with environment.env file.
+ ```sh
+ docker-compose --env-file environment.env up
+ ```
 
+### Start kafka server
 
+ ```sh
+ docker-compose --env-file environment.env up
+ ```
+
+### Create a topic in Kafka
+```sh
+ ./kafka-topics.sh --create --topic test-topic --bootstrap-server host.docker.internal:9092
+ ```
+
+### List all Kafka topic
+```sh
+  ./kafka-topics.sh --list --bootstrap-server host.docker.internal:9092
+```
 
