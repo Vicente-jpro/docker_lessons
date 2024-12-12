@@ -39,11 +39,12 @@ docker compose up -d --build
  ```
 
 ### Create a topic in Kafka
+In docker app, go to `kafka-server-name` then click on `Exec` go to directory `/opt/bitnami/kafka/bin/` then, execute this commands bellow.
 ```sh
  ./kafka-topics.sh --create --topic test-topic --bootstrap-server host.docker.internal:9092
  ```
 
-### List all Kafka topic
+#### List all Kafka topic
 ```sh
   ./kafka-topics.sh --list --bootstrap-server host.docker.internal:9092
 ```
