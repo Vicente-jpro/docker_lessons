@@ -49,3 +49,9 @@ In docker app, go to `kafka-server-name` then click on `Exec` go to directory `/
   ./kafka-topics.sh --list --bootstrap-server host.docker.internal:9092
 ```
 
+#### Delete Kafka topic
+```sh
+./kafka-topics.sh --delete --topic topic-name --bootstrap-server localhost:9092
+```
+
+
