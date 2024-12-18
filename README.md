@@ -54,4 +54,9 @@ In docker app, go to `kafka-server-name` then click on `Exec` go to directory `/
 ./kafka-topics.sh --delete --topic topic-name --bootstrap-server localhost:9092
 ```
 
+#### list Kafka topic [Execute kafka server out of docker container (in terminal)]
+```sh
+docker-compose exec kafka-server-name /opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server host.docker.internal:9092
+```
+
 
